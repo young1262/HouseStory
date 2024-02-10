@@ -1,0 +1,459 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+   --text-color:#141718;
+   --point-color:#6c7275;
+   --main-color:#43766C;
+}
+body {
+   max-width: 430px;
+   min-width: 360px;
+   margin: auto;
+   font-family: "Noto Sans KR", sans-serif;
+   color: var(--text-color);
+   
+}
+
+.container {
+   overflow: hidden; 
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   transition: 0.3s ease-out;
+   z-index: 111;
+ }
+ .container img {
+   width: 100%;
+   height: 100vh;
+ }
+ .container h1  {
+   text-align: center;
+   background: url('../img/logo.png')center/ contain no-repeat;
+   width: 100%; 
+   height: 80px;
+   position: absolute;
+   top: 40%; 
+ } 
+
+ .body_scroll {
+   overflow: hidden;
+   
+}
+
+#wrap {
+   position: relative;
+   left: 0;
+   width:100%; 
+   height:100%;
+   transition: 0.3s ease-out;
+}
+
+/* header */
+header {
+   height: 60px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+   padding: 0 20px;
+}
+.lnb_btn {
+   
+}
+
+.logo img{  
+   width: 100px;
+   height: 40px;
+   position: absolute;
+   top: 12px;
+   left: 60px;
+}
+.user_btn img {
+   width: 28px;
+   height: 28px;
+   position: absolute;
+   right: 60px;
+   top: 16px;
+}
+.search_btn img {
+   width: 19px;
+   height: 19px;
+   
+}
+
+/* main */
+main {
+   padding: 0 20px;
+}
+main img {
+   width: 100%;
+   height: 304px;
+   object-fit: cover;
+}
+.text span {
+   display: block;
+   text-align: center;
+   margin: 32px 0;
+   font-size: 40px;
+   font-family: "Poppins", sans-serif;
+   font-weight: 600;
+}
+.text strong {
+   color: var(--point-color);
+}
+
+/* controls */
+.slider {
+   position: relative;
+}
+.slick-arrow {
+   position: absolute;
+   top: 50%;
+   border: none;
+   text-indent: -9999px;   
+ }
+
+ .slick-next {
+   background: none;  
+ }
+ .slick-dots {
+   display: flex;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 10px;
+ }
+ .slick-dots li {
+   background: #fff;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   margin: 0 4px;
+   cursor: pointer;
+   border: none;
+ }
+ .slick-dots li.slick-active{
+   background: var(--main-color);
+   width: 30px;
+   border-radius: 10px;
+ }
+ .slick-dots li button{
+   all:unset;
+   text-indent: -9999px;
+ }
+/* section */
+
+h2 {
+   font-size: 32px;
+   text-align: center;
+   font-weight: 500;
+   font-family: "Poppins", sans-serif;
+   margin-bottom: 20px;
+}
+section {
+   display: flex;
+   justify-content:space-between;
+   text-align: center;
+   gap: 10px;
+   padding: 0 14px;
+   width: 100%;
+}
+section > div {
+   width: 50%;
+}
+section img {
+   width: 100%;
+   height: 140px;
+   border-radius: 5px;
+   object-fit:fill;
+   
+}
+section p {
+   font-size: 14px;
+   font-weight: 500;
+   margin: 15px 0;
+}
+.sec {
+   margin-bottom: 32px;
+}
+
+.story_txt {
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   padding-left: 15px;
+   margin-bottom: 10px;
+   font-weight: 500;
+   
+}
+.story_txt > span {
+   font-size: 18px;
+   flex: 1; 
+}
+.story_txt > p {
+   font-size: 12px;   
+   margin-right: 15px;  
+}
+.story_txt .size {
+   
+}
+.story {
+   display:flex;
+   width: 100%;
+   gap: 5px;
+}
+.story > .fade {
+   width: 33.333%;   
+}
+.story > .fade div > img { 
+   width: 100%;
+   height: 100px;
+}
+
+
+/* 뉴스레터 */
+.newsletter {
+   position: relative;
+   margin-top: 32px;
+}
+.newsletter img {
+   width: 100%;
+   
+}
+.newsletter .nl {
+   position: absolute;
+   top: 10px;
+   left: 33%;
+   line-height: 1.5;
+}
+.newsletter .nl > h3 {
+   font-size: 14px;
+   font-weight: 600;
+}
+.newsletter .nl > p {
+   font-size: 10px;
+   padding-left: 22px;
+}
+.mail {
+   width: 100%;
+   position: absolute;
+   bottom: 10px;
+   left: 22%;
+}
+.mail span {
+   vertical-align: middle;
+}
+.mail input {
+   border: none;
+   border-bottom: 1px solid var(--point-color);
+   background-color: transparent;
+   width: 47%;
+   outline: none;
+}
+.newsletter > a {
+   position: absolute;
+   bottom: 16px;
+   left: 63%;
+   font-size: 14px;
+   color: #43766C;
+   font-weight: 600;
+}
+
+/* footer */
+footer {
+   background: var(--text-color);
+   padding: 32px 0;
+   font-family: "Poppins", sans-serif;
+   color: #b1b1b1;
+}
+footer img {
+   width: 100px;
+   height: 40px;
+   display: block;
+   margin: auto;
+}
+footer .short {
+   border-bottom: 2px solid #b1b1b1;
+   width: 30px;
+   margin: auto;
+   padding-top: 5px;
+}
+footer > p {
+   font-size: 14px;
+   text-align: center;
+   padding: 10px 0;
+}
+footer > a {
+   display: block;
+   text-align: center;
+   font-size: 14px;
+   line-height: 2.5;
+}
+footer .line {
+   border-bottom: 1px solid #b1b1b1;
+   width: 330px;
+   margin: auto;
+   padding-top: 10px;
+}
+.footer_sns {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 50px;
+   margin-top: 20px;  
+}
+.footer_sns > a > img {
+   width: 20px;
+   height: 20px;
+}
+.copy {
+   font-size: 12px;
+   padding-top: 20px;
+}
+
+/* 좌측 슬라이더 메뉴열기 */
+
+#lnb {
+   font-family: "Poppins", sans-serif;
+   width: 300px;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   left: -300px;
+   transition: 0.3s ease-out;
+   z-index: 333;
+   background: #fff;
+}
+
+.lnb_content{
+   height: 60px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+     
+}
+
+.lnb_logo img {
+   width: 100px;
+   height: 40px;
+   padding-left: 15px;
+}
+.lnb_close img {
+   padding-right: 20px;
+}
+.lnb_list {
+   padding: 0 20px;
+}
+.lnb_list a {
+   font-size: 20px;
+   line-height: 3;  
+}
+.lnb_list a::after {
+   display: flex;
+   content: '';
+   border-bottom: 1px solid #b1b1b1;
+   width:100%;
+}
+.btn {
+   margin: auto;
+   width: 80%;
+   height: 50px;  
+   border-radius: 5px;
+   background: #141718;
+   color: #f0f0f0;
+   margin-top: 100px; 
+}
+.btn > a {
+   display: block;
+   font-size: 18px;
+   text-align: center;
+   line-height: 50px;
+}
+#lnb > img {
+  margin-left: 45px;
+  margin-top: 30px;
+}
+.cover {
+   display: none;
+   position: fixed;
+   inset: 0;
+   background: rgba(0, 0, 0, 0.8);
+   z-index: 222;
+}
+
+/* search 메뉴 */
+#search {
+   width: 100%;
+   height: 140px;
+   padding: 0 30px;
+   position: fixed;
+   top: -100%;
+   left: 0;
+   background: #fff;
+   z-index: 444;
+}
+
+.sc_bar {
+   border: 1px solid var(--point-color);
+   border-radius: 5px;
+   margin-top: 20px;
+   width: 100%;
+   height: 42px;
+   overflow: hidden;
+   position: relative;
+}
+.sc_bar img {
+   width: 26px;
+   height: 26px;
+   padding-left: 10px;
+   
+}
+.sc_bar input {
+   border: none;
+   height: 42px;
+   line-height: 42px;
+   color: var(--point-color);
+   font-weight: 600;
+   outline: none;
+}
+.sc_bar > a > img {
+   position: absolute;
+   right: 10px;
+   top: 8px;
+   
+}
+article {
+   display: flex;
+   justify-content: space-between;
+   color: #f0f0f0;
+   font-family: "Poppins", sans-serif;
+   margin-top: 20px;
+   text-align: center;
+   line-height: 32px;
+   padding: 0 20px;
+}
+.kit {
+   background: var(--main-color);
+   border-radius: 5px;
+   width: 84px;
+   height: 32px;
+}
+.bed {
+   background: var(--main-color);
+   border-radius: 5px;
+   width: 64px;
+   height: 32px;
+}
+.kids {
+   background: var(--main-color);
+   border-radius: 5px;
+   width: 64px;
+   height: 32px;
+}
+
+
+
+
+
+
